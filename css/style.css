@@ -33,7 +33,7 @@ nav a:focus {
      gap: 13px;
      width: 700px;
      grid-template-columns:
-          repeat(5, 140px);
+          repeat(5, 1fr);
      margin-inline: auto;
 }
 
@@ -44,7 +44,7 @@ nav a:focus {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
-     background-attachment: fixed; /* Parallax effect, matches starter_style.css */
+     background-attachment: fixed;
 }
 
 /* Steps 6 and 7: Write the selector/rule properties to  place the next five elements in the next
