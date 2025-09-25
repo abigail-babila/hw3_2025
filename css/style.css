@@ -22,19 +22,30 @@ nav a:focus {
      border: 5px dashed green;
 }
 
+/*Write selector/rule property to style all elements when in focus*/
 nav a:focus {
   border: 2px dotted purple;
 }
 
-/*Write selector/rule property to style all elements when in focus*/
-
-
-
 /*Write selector/rule property to style the container */
-
+.container {
+     display: grid;
+     gap: 13px;
+     width: 700px;
+     grid-template-columns:
+          repeat(5, 140px);
+     margin-inline: auto;
+}
 
 /*Write selector/rule property to add the background image to the first div in the grid and place it in the grid. */
-
+.container > :first-child {
+     grid-column: 1 / -1;
+     background-image: url('../images/header.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed; /* Parallax effect, matches starter_style.css */
+}
 
 /* Steps 6 and 7: Write the selector/rule properties to  place the next five elements in the next
  five rows in the grid. */
